@@ -1,0 +1,26 @@
+
+    
+@media only screen and (max-width: 37.5em) {
+    
+    nav button { display:none; }  
+    
+    section.forecast { display:none; }  
+    
+    article p.town-article img { width: 100%; margin: 0 auto; } 
+    
+    ul.horizontal li {
+        float: none;
+    }
+    .forecast-pic {
+        float: none;
+    }
+    header, nav, main, footer { 
+        max-width: 90%;
+    }
+    .hide {
+        display: none;
+    }
+    .hamburguer {
+        display: block;
+    }
+  }
