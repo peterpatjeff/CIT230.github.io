@@ -1,0 +1,72 @@
+/* This main css file  small/phone view */
+
+
+body {
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  padding:20px;
+}
+
+header, nav, main, footer { 
+    max-width: 100%;
+}
+header .subheading {
+    overflow: hidden;
+
+}
+
+nav {
+    clear: both;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+
+/* Other */
+.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(9, 59, 105);
+}
+
+.blue{
+    border: 1px solid #f7f4f4;
+    background-color: #f7f4f4;
+}
+ul.horizontal li {
+    float: left;
+}
+ul.gray li a {
+    display: block;
+    color: rgb(93, 98, 100);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.horizontal {
+    list-style-type: none;
+}
+ul.blue li a.active {
+    color: white;
+    background-color: rgb(115, 118, 119);
+}
+ul.blue li a:hover:not(.active) {
+    background-color: #ddd;
+}
+.logo {
+    float:left;
+}
+.forecast-pic {
+    float: left;
+}
+.highlow p {
+    margin: 0;
+}
+.current p {
+    margin: 0;
+}
+.conditions p {
+    margin: 0;
+}
