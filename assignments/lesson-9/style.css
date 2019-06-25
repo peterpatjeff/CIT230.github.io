@@ -1,22 +1,24 @@
 /* || general styles */
 
 html {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: 'Lora', serif;
+  background-color: #f9f7f1;
 }
 
 body {
-  width: 800px;
+  width: 960px;
   margin: 0 auto;
 }
 
 h1, h2 {
-  font-family: 'Faster One', cursive;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 
 /* header styles */
 
 h1 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   text-align: center;
 }
 
@@ -29,8 +31,13 @@ header p {
 /* section styles */
 
 section article {
-  width: 33%;
+  width: 32%;
   float: left;
+  padding-left: 10px;
+}
+section article:nth-child(2) {
+  border-left: 1px solid black; 
+  border-right: 1px solid black;
 }
 
 section p {
@@ -43,6 +50,5 @@ section ul {
 
 h2 {
   font-size: 2.5rem;
-  letter-spacing: -5px;
   margin-bottom: 10px;
 }

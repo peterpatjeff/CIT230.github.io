@@ -1,29 +1,22 @@
-
-    
 @media only screen and (max-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     
-     nav button { display:none; }  
+    nav button { display:block; }  /* hamburger button does not need to be shown */
     
-        section.forecast { display:none; }  
+    section.forecast { display:none; }  /* show the 10-day forecast with the medium view and up */
     
-         article p.town-article img { width: 100%; margin: 0 auto; } 
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
     
-         ul.horizontal li {
+    ul.horizontal li {
         float: none;
     }
-    .forecast-section {
-        display: grid;
+    .forecast-pic {
+        float: none;
     }
     header, nav, main, footer { 
         max-width: 90%;
     }
-    ul.gray li a {
-        width: 100%;
-    }
-    .hide {
-        display: none;
-    }
-    .hamburguer {
-        display: block;
+    section {
+        display:block;
     }
   }

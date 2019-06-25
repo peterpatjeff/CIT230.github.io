@@ -1,108 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Weather</title>
-    <meta name="description" content="Weather page for Preston, Idaho">
-    <link rel="stylesheet"  href="css/normalize.css">
-    <link rel="stylesheet"  media="(max-width:700px)" href="css/small-9.css">
-    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/medium-9.css">
-    <link rel="stylesheet" media="(min-width:1000px)" href="css/large-9.css">
-    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crazy Weather || Franklin</title>
+  <meta name="author" content="Your Name Here">
+  <meta name="description" content="Know if to get an umbrella or not">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
 </head>
 <body>
-        <header>
-            <picture class="headerItem">
-                <source srcset="images/logo.png" media="(min-width: 731px)">
-                <img id="logo" src="images/smallLogo.png" alt="Neighborhood Weather Logo"/>
-            </picture>
-            <div class="headerItem">
-                <h1>Neighborhood Weather</h1>
-                <div class="motto">
-                    <p>Today's weather - special delivery</p>
-                </div>
-            </div>
-        </header>
-        <div>
-            <nav class="topnav">
-                <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
-                    <button>&#9776;</button>
-                    <p>MENU</p>
-                </div>
-                    <ul class="hide" id="primaryNav">
-                        <li class="currentPage"><a href="index.html">Home</a></li>
-                        <li><a href="preston-9.html">Preston</a></li>
-                        <li><a href="sodaSprings/">Soda Springs</a></li>
-                        <li><a href="fishHaven/">Fish Haven</a></li>
-                        <li><a href="stormcenter.html">Storm Center</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-            </nav>
-        </div>
-    <main class="homePage">
-        <h1 id=townTitle>Our Neighborhood</h1>
-        <section>
 
-        </section>
+  <header>
+    <img src="img/logo.png" alt="The site logo" class="logo">
+    <h1>Crazy Weather</h1>
+    <div class="subheading">We understand it!</div>
+  </header>
 
-        <h2 id="currentEvents">Current Events Coming Soon!</h2>
-    </main>
-
-    <footer>
-        <p id="currentDate"></p>
-        <p id="copyright">&copy; 2019 Neighborhood Weather</p>
-    </footer>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script>
-        var section = document.querySelector('section');
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()" class="hamburguer" >&#9776;</button>
+    <ul class="horizontal gray" id="menu">
+    	<li><a class="active" href="#">Home</a></li>
+    	<li><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
     
-        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-    
-        request.onload = function() {
-            var townInformation = request.response;
-            showTowns(townInformation);
-        }
-   
-        function showTowns(jsonObj) {
-            var towns = jsonObj['towns'];
-            var urls = { 'Preston': 'images/preston.jpg', 'Soda Springs': 'images/sodaSprings.jpg', 'Fish Haven': 'images/fishHaven.jpg'};
+  <main>
+    <section>
+      <!-- Los datos Iran aqui, seran enviados desde JS -->
+    </section>
+  
+  </main>
+  <br>
+  <footer>
+    <aside>
+      Contact us by Email contact@crazyweather.org
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Crazy Weather | <span id="currentdate">10-02-2018</span></p>
+  </footer>
 
-            for (var index = 0; index < towns.length; index++) {
-                if (towns[index].name == "Preston" || towns[index].name == "Soda Springs" || towns[index].name == "Fish Haven") {
-                    // towns[index] is my item.
-                    var article = document.createElement('article');
-                    var header = document.createElement('h2');
-                    var p1 = document.createElement('p');
-                    var p2 = document.createElement('p');
-                    var p3 = document.createElement('p');
-                    var p4 = document.createElement('p');
-                    var image = document.createElement('img');
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/consumingJSON.js"></script>
 
-                    header.textContent = towns[index].name;
-                    p1.textContent = towns[index].motto;
-                    p2.textContent = 'Year Founded: ' + towns[index].yearFounded;
-                    p3.textContent = 'Population: ' + towns[index].currentPopulation;
-                    p4.textContent = 'Annual Rain Fall:' + towns[index].averageRainfall;
-                    image.src = urls[towns[index].name]; 
-        
-                    article.appendChild(header);
-                    article.appendChild(p1);
-                    article.appendChild(p2);
-                    article.appendChild(p3);
-                    article.appendChild(p4);
-                    article.appendChild(image);
-        
-                    section.appendChild(article);
-                }
-            }
-        }
-    
-        </script>
 </body>
 </html>
