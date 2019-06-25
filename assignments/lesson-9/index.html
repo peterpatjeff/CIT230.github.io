@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crazy Weather || Franklin</title>
+  <meta name="author" content="Your Name Here">
+  <meta name="description" content="Know if to get an umbrella or not">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/small-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <img src="img/logo.png" alt="The site logo" class="logo">
+    <h1>Crazy Weather</h1>
+    <div class="subheading">We understand it!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()" class="hamburguer" >&#9776;</button>
+    <ul class="horizontal gray" id="menu">
+    	<li><a class="active" href="#">Home</a></li>
+    	<li><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <section>
+      <!-- Los datos Iran aqui, seran enviados desde JS -->
+    </section>
+  
+  </main>
+  <br>
+  <footer>
+    <aside>
+      Contact us by Email contact@crazyweather.org
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Crazy Weather | <span id="currentdate">10-02-2018</span></p>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/consumingJSON.js"></script>
+
+</body>
+</html>

@@ -1,9 +1,10 @@
-/* This main css file  small/phone view */
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding:20px;
 }
 
@@ -21,26 +22,30 @@ nav {
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
+.hide {
+    display: none;
+}
 
-/* Other */
+nav button { display:none; }  /* hamburger button does not need to be shown */
+/* Other Class Selectors */
 .horizontal {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(9, 59, 105);
+    background-color: #333;
 }
 
-.blue{
-    border: 1px solid #f7f4f4;
-    background-color: #f7f4f4;
+.gray{
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
 ul.horizontal li {
     float: left;
 }
 ul.gray li a {
     display: block;
-    color: rgb(93, 98, 100);
+    color: #666;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -48,25 +53,19 @@ ul.gray li a {
 ul.horizontal {
     list-style-type: none;
 }
-ul.blue li a.active {
+ul.gray li a.active {
     color: white;
-    background-color: rgb(115, 118, 119);
+    background-color: #008CBA;
 }
-ul.blue li a:hover:not(.active) {
+ul.gray li a:hover:not(.active) {
     background-color: #ddd;
 }
 .logo {
     float:left;
 }
-.forecast-pic {
-    float: left;
+section {
+    display: flex;
 }
-.highlow p {
-    margin: 0;
-}
-.current p {
-    margin: 0;
-}
-.conditions p {
-    margin: 0;
+section article {
+    padding: 20px;
 }
