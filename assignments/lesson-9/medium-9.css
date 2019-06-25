@@ -14,9 +14,7 @@ h4 {
     font-size: 23px;
 }
 
-
 /* Styles for header */
-
 header {
     background-color: #47718a;
     overflow: hidden;
@@ -30,7 +28,6 @@ header img {
     width: 100px;
     margin: 15px 0px 0px 0px;
 }
-
 
 header h1 {    
     color: #2e2c2a;
@@ -58,7 +55,13 @@ ul {
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    background-color: #214459;
+    overflow: hidden;
+    padding: 20px 5px;
+    border-bottom: 3px solid #2e2c2a;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 nav a:link {
@@ -66,83 +69,36 @@ nav a:link {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-    text-align: center;
+    padding: 10px;
 }
 
-nav a:hover, .hiddenMenu:hover a {
+nav a:hover {
     color:  #8d8c8a;
     text-shadow: 3px 3px 6px #2e2c2a;
-}
-
-nav a:visited {
-    color: #fff;
-}
+} 
 
 nav a:active {
     color: #d8da76;
     text-shadow: 3px 3px 6px #2e2c2a;
 }
 
-.topnav {
-    background-color: #214459;
-}
-
-nav ul li .selected {
-    background-color: #47718a;
-    padding: 10px;
-}
-
-nav ul li a {
-    display: block;
-    padding: .8rem 2%;
-    border-top: 1px solid #2e2c2a;
-}
-
-
-/* Styles for Hamburger Nav Menu */
-
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    color: #fff;
-    display: inline-block;
-}
-
-button:focus {
-    outline: 0;
-}
-
-nav p {
-    color: #fff;
-    font-size: 1.3rem;
-    display: inline-block;
-    margin: 0;
-}
-
-nav button:hover, nav p:hover {
-    color:  #8d8c8a;
-    text-decoration: none;
-}
-
-.wholeHamburger{
-    text-align: center;
-    overflow: hidden;
-    border-bottom: 2px solid #2e2c2a;
-}
-
 li.currentPage {
-    background-color: #47718a;
+    text-shadow: 3px 3px 6px #d8da76;
 }
 
-nav ul.hide {
+#hiddenMenu {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 /* Styles for Footer */
 
-#copyright, #currentDate {
+#copyright, #currentDate{
     color: #fff;
     text-align: center;
 }
@@ -152,7 +108,6 @@ footer {
     overflow: hidden;
     padding: 10px 5px;
     border-bottom: 3px solid #2e2c2a;
-    border-top: 3px solid #2e2c2a;
 }
 
 /* Styles for Preston Weather Page */
@@ -175,7 +130,6 @@ footer {
     padding: 10px 30px;
     border: 2px solid #214459;
     color: #fff;
-    font-size: 2.5vw;
 }
 
 #bigImage {
@@ -191,7 +145,8 @@ h4 {
     background-color: #8d8c8a;
     border: 2px solid #2e2c2a;
     width: 96.7%;
-    margin: 5% 1.5%;    
+    margin: 3% 1.5%; 
+    position: relative;  
 }
 
 #articleTitle {
@@ -200,23 +155,27 @@ h4 {
 }
 
 #authorByline {
-    margin: 2% 5%;
+    margin: 0 5%;
     font-size: 15px;
 }
 
 #articlePic {
-    width: 95%;
-    margin: 0 2.5%
+    width: 35%;
+    position: absolute;
+    right: 30px;
+    top: 10%;
 }
 
 #articleBody {
     margin: 2% 2%;
+    width: 55%;
 }
 
 #PrestonMap {
-    width: 95%;
-    margin: 0 2.5%;
+    float:left;
     border: 2px solid #2e2c2a;
+    width: 48%;
+    margin: 3%;
 }
 
 #contactArea {
@@ -225,33 +184,43 @@ h4 {
     border-bottom: 3px solid #2e2c2a;
     border-top: 3px solid #2e2c2a;
     padding-bottom: 10px;
+    position: relative;
 }
 
 #contactArea p {
     color: #fff;
 }
 
-#column1 {
-    float: left;
-    margin: 2.5%;
-}
-
-#column2 {
-    float: right;
-    margin: 2.5%;
-}
-
 #columns {
-    width: 100%;
+    width: 40%;
+    float: right;
+    margin: 2%;
 }
 
-.hidden {
-    display:none;
+.fiveDay {
+    background-color: #8d8c8a;
+    border: 2px solid #2e2c2a;
+    width: 96.7%;
+    margin: 3% 1.5%; 
+    text-align: center; 
 }
+
+#forecast {
+    background-color: #47718a;
+    border: 1px solid #2e2c2a;
+    width: 80%;
+    margin: 2% 10%;
+    color: #fff;
+}
+
+#forecastTitle {
+    margin: 2% auto;
+}
+
 
 /* Styles for Weather Gallery */
 
-h2 #weatherHeader {
+#weatherHeader {
     margin-left: 20px;
     color: #214459;
 }
@@ -262,9 +231,9 @@ h2 #weatherHeader {
 }
 
 .galleryBox {
-    width: 100%;
+    width: 45%;
     border: 1px solid #2e2c2a;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 figure figcaption {
@@ -275,11 +244,6 @@ figure figcaption {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#weatherHeader {
-    margin-left: 20px;
-    color: #214459;
 }
 
 /* Styles for Thank-You Page */
@@ -295,7 +259,7 @@ figure figcaption {
 }
 
 #thankYouImage img {
-    width: 50%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
@@ -306,7 +270,7 @@ figure figcaption {
 /* Styles for Storm Center Page */
 
 form {
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -323,19 +287,19 @@ form {
 /* Styles for Home Page */
 
 .homePage article {
-    width: 80%;
+    width: 25%;
     text-align: center;
     background-color: #fff;
-    margin: 25px auto;
+    margin: 20px 20px 20px 20px;
     border: 4px solid #214459;
     box-shadow: 4px 4px 8px #2e2c2a;
-    position: relative;
 }
 
 .homePage section {
-    background-color: #b1b0ae;
-    padding: 20px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b1b0ae;}
 
 #townTitle {
     text-align: center;
@@ -345,13 +309,13 @@ form {
     color: #214459;
 }
 
-.homePagesection p {
+.homePage section p {
     width: 70%;
     margin: 10px auto;
 }
 
-article img {
-    width: 100%;  
+.homePage article img {
+    width: 100%; 
 }
 
 .homePage section p:nth-child(2) {
