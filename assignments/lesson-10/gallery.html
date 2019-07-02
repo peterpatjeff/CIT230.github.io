@@ -1,76 +1,89 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Extreme Weather Forcast || Preston</title>
-  <meta name="author" content="Your Name Here">
-  <meta name="description" content="Forcasting the Extreme">
-  <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
-  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery /title>
+    <meta name="description" content="Images ">
+    <link rel="stylesheet"  href="css/minifiedNormalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/minifiedSmall.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/minifiedMedium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/minifiedLarge.css">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <a href="index.html">
-          <img src="img/logo.png" alt="The site logo" class="logo">
-          <h1>Extreme Weather Forcast </h1>
-          <div class="subheading">Forcasting the Extreme!</div>
-        </a>
+        <header>
+            <picture class="headerItem">
+                <source srcset="images/logo.png" media="(min-width: 731px)">
+                <img id="logo" src="images/smallLogo.png" alt="Neighborhood Weather Logo"/>
+            </picture>
+            <div class="headerItem">
+                <h1>Weather</h1>
+                <div class="motto">
+                    <p>Today's Weather </p>
+                </div>
+            </div>
         </header>
+        <div>
+            <nav class="topnav">
+                <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                    <button>&#9776;</button>
+                    <p>MENU</p>
+                </div>
+                    <ul class="hide" id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="preston.html">Preston</a></li>
+                        <li><a href="sodaSprings.html">Soda Springs</a></li>
+                        <li><a href="fishHaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li class="currentPage"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+            </nav>
+        </div>
+    <main>
+        <section id="weatherGallery">
+            <h2 id="weatherHeader">Gallery</h2>
 
-  <!-- site navigation use placeholder references -->
-  <nav>
-    <button onclick="toggleNavMenu()" class="hamburguer" >&#9776;</button>
-    <ul class="horizontal gray" id="menu">
-    	<li><a href="index.html">Home</a></li>
-    	<li><a href="franklin.html">Franklin</a></li>
-    	<li><a href="greenville.html">Greenville</a></li>
-    	<li><a href="springfield.html">Springfield</a></li>
-    	<li><a href="stormcenter.html">Storm Center</a></li>
-    	<li><a class="active" href="#">Gallery</a></li>
-    </ul>		
-  </nav>
-    
-  <main>
-    <h2>Gallery</h2>
-    <div class="grid">
-        <div> <img src="img/gallery-1.jpg" alt="gallery-1">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra odio id suscipit.</span>
-        </div>
-        <div> <img src="img/gallery-2.jpg" alt="gallery-2">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra odio id suscipit.</span>
-        </div>
-        <div> <img src="img/gallery-3.jpg" alt="gallery-3">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra odio id suscipit.</span>
-        </div>
-        <div> <img src="img/gallery-4.jpg" alt="gallery-4">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra odio id suscipit.</span>
-        </div>
-        <div> <img src="img/gallery-5.jpg" alt="gallery-5">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra odio id suscipit.</span>
-        </div>
-        <div> <img src="img/gallery-6.jpeg" alt="gallery-6">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra odio id suscipit.</span>
-        </div>
-    </div>
-   </main>
+            <div id="picGallery">
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/lake.jpg" alt="lake at sunset"/>
+                    <figcaption>lake</figcaption>
+                </figure>
+                
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/rainbow.jpg" alt="rainbow over road"/>
+                    <figcaption>Rainbow </figcaption>
+                </figure>
 
-  <br />
-  <br />
-  <br />
-  <footer>
-    <aside>
-      Contact us by Email contact@crazyweather.org
-    </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | Crazy Weather | <span id="currentdate"> </span></p>
-  </footer>
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/lightning.jpg" alt="lightning in purple sky"/>
+                    <figcaption>lightning </figcaption>
+                </figure>
+                            
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/fog.jpg" alt="fog among pine trees"/>
+                    <figcaption>Fog </figcaption>
+                </figure>
+                
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/snow.jpg" alt="snow on mountain top"/>
+                    <figcaption>Snow </figcaption>
+                </figure>
+                
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/sunset.jpg" alt="beautiful cloudy sky at sunset with orange and yellow colors"/>
+                    <figcaption> sunset</figcaption>
+                </figure>
+            </div>
 
-  <script src="js/hamburger.js"></script>
-  <script src="js/currentdate.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019  Weather</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>
