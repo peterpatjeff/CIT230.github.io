@@ -9,12 +9,12 @@ header h1{color:#2e2c2a;padding:20px 20px 0 20px;font-size:35px}
 ul{margin:0}
 nav ul{list-style-type:none;background-color:#214459;overflow:hidden;padding:20px 5px;border-bottom:3px solid #2e2c2a;display:flex;justify-content:center;justify-content:space-evenly}
 nav a:link{text-decoration:none;color:#fff;font-size:16px;text-transform:uppercase;padding:10px}
-nav a:hover{color:#43464B;text-shadow:3px 3px 6px #2e2c2a}
+nav a:hover{color:#333333;text-shadow:3px 3px 6px #2e2c2a}
 nav a:active{color:#d8da76;text-shadow:3px 3px 6px #2e2c2a}
 li.currentPage{text-shadow:3px 3px 6px #d8da76}
 #hiddenMenu{display:none}a{text-decoration:none;color:#fff}
 #attribution,#copyright,#currentDate{color:#fff;text-align:center}
-footer{background-color:#43464B;overflow:hidden;padding:10px 5px;border-bottom:3px solid #2e2c2a}
+footer{background-color:#333333;overflow:hidden;padding:10px 5px;border-bottom:3px solid #2e2c2a}
 #attribution a{text-decoration:underline;color:#fff}
 #sky{width:97%;margin:0 1.5%}
 .pageTitle{text-align:center;font-size:40px}
