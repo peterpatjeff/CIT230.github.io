@@ -1,6 +1,6 @@
 body{background-color:#fff;font-family:Arial,Helvetica,sans-serif;margin:0;color:#2e2c2a}
 h1,h2,h3{font-family:Fahkwang,sans-serif}h4{font-size:23px}
-header{background-color:#47718a;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;display:flex;justify-content:center}
+header{background-color:#d3d3d3;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;display:flex;justify-content:center}
 header img{width:100px;margin:15px 0 0 0}
 header h1{color:#2e2c2a;padding:20px 20px 0 20px;font-size:35px}
 .motto p{font-style:italic;color:#babbbc;margin-left:90px;margin-top:-10px}
@@ -11,20 +11,20 @@ nav a:link{text-decoration:none;color:#fff;font-size:16px;text-transform:upperca
 nav a:visited{color:#fff}
 nav a:active{color:#d8da76;text-shadow:3px 3px 6px #2e2c2a}
 .topnav{background-color:#214459}
-nav ul li .selected{background-color:#47718a;padding:10px}
+nav ul li .selected{background-color:##d3d3d3;padding:10px}
 nav ul li a{display:block;padding:.8rem 2%;border-top:1px solid #2e2c2a}
 nav button{margin:.2rem 2%;background-color:transparent;border:none;font-size:1.5rem;color:#fff;display:inline-block}
 button:focus{outline:0}
 nav p{color:#fff;font-size:1.3rem;display:inline-block;margin:0}
 nav button:hover,nav p:hover{color:#8d8c8a;text-decoration:none}
 .wholeHamburger{text-align:center;overflow:hidden;border-bottom:2px solid #2e2c2a}
-li.currentPage{background-color:#47718a}nav ul.hide{display:none}
+li.currentPage{background-color:##d3d3d3}nav ul.hide{display:none}
 #attribution,#copyright,#currentDate{color:#fff;text-align:center}
-footer{background-color:#214459;overflow:hidden;padding:10px 5px;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a}
+footer{background-color:#d3d3d3;overflow:hidden;padding:10px 5px;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a}
 #attribution a{text-decoration:underline;color:#fff}
 #sky{width:97%;margin:0 1.5%}
 .pageTitle{text-align:center;font-size:40px}
-#weatherbox{background-color:#47718a;position:absolute;left:5%;top:10%;padding:10px 30px;border:2px solid #214459;color:#fff;font-size:2.5vw}
+#weatherbox{background-color:##d3d3d3;position:absolute;left:5%;top:10%;padding:10px 30px;border:2px solid #214459;color:#fff;font-size:2.5vw}
 #bigImage{position:relative}
 h4{color:#2e2c2a;text-shadow:3px 3px 8px #fff}
 .articleBox{background-color:#babbbc;border:2px solid #2e2c2a;width:96.7%;margin:5% 1.5%}
@@ -33,7 +33,7 @@ h4{color:#2e2c2a;text-shadow:3px 3px 8px #fff}
 #articlePic{width:95%;margin:0 2.5%}
 #articleBody{margin:2% 2%;text-align:left}
 #PrestonMap{width:95%;margin:0 2.5%;border:2px solid #2e2c2a}
-#contactArea{background-color:#47718a;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;padding-bottom:10px}
+#contactArea{background-color:#d3d3d3;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;padding-bottom:10px}
 #contactArea p{color:#fff}
 #column1{float:left;margin:2.5%}
 #column2{float:right;margin:2.5%}
