@@ -1,23 +1,23 @@
 body{background-color:#fff;font-family:Arial,Helvetica,sans-serif;margin:0;color:#2e2c2a}
 h1,h2,h3{font-family:Fahkwang,sans-serif}
 h4{font-size:23px}
-header{background-color:#47718a;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;display:flex;justify-content:center}
+header{background-color:#335F99;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;display:flex;justify-content:center}
 header img{width:100px;margin:15px 0 0 0}
 header h1{color:#2e2c2a;padding:20px 20px 0 20px;font-size:35px}
 .motto p{font-style:italic;color:#babbbc;margin-left:90px;margin-top:-10px}
 .headerItem{text-align:center}ul{margin:0}
-nav ul{list-style-type:none;background-color:#214459;overflow:hidden;padding:20px 5px;border-bottom:3px solid #2e2c2a;display:flex;justify-content:center;justify-content:space-evenly}
+nav ul{list-style-type:none;background-color:#062965;overflow:hidden;padding:20px 5px;border-bottom:3px solid #2e2c2a;display:flex;justify-content:center;justify-content:space-evenly}
 nav a:link{text-decoration:none;color:#fff;font-size:16px;text-transform:uppercase;padding:10px}
 nav a:hover{color:#8d8c8a;text-shadow:3px 3px 6px #2e2c2a}
 nav a:active{color:#d8da76;text-shadow:3px 3px 6px #2e2c2a}
 li.currentPage{text-shadow:3px 3px 6px #d8da76}
 #hiddenMenu{display:none}a{text-decoration:none;color:#fff}
 #attribution,#copyright,#currentDate{color:#fff;text-align:center}
-footer{background-color:#214459;overflow:hidden;padding:10px 5px;border-bottom:3px solid #2e2c2a}
+footer{background-color:#062965;overflow:hidden;padding:10px 5px;border-bottom:3px solid #2e2c2a}
 #attribution a{text-decoration:underline;color:#fff}
 #sky{width:97%;margin:0 1.5%}
 .pageTitle{text-align:center;font-size:40px}
-#weatherbox{background-color:#47718a;position:absolute;left:5%;top:10%;padding:10px 30px;border:2px solid #214459;color:#fff}
+#weatherbox{background-color:#335F99;position:absolute;left:5%;top:10%;padding:10px 30px;border:2px solid #062965;color:#fff}
 #bigImage{position:relative}
 h4{color:#2e2c2a;text-shadow:3px 3px 8px #fff}
 .articleBox{background-color:#babbbc;border:2px solid #2e2c2a;width:96.7%;margin:3% 1.5%;position:relative}
@@ -26,17 +26,17 @@ h4{color:#2e2c2a;text-shadow:3px 3px 8px #fff}
 #articlePic{width:35%;position:absolute;right:30px;top:10%}
 #articleBody{margin:2% 2%;width:55%;text-align:left}
 #PrestonMap{float:left;border:2px solid #2e2c2a;width:48%;margin:3%}
-#contactArea{background-color:#47718a;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;padding-bottom:10px;position:relative}
+#contactArea{background-color:#335F99;overflow:hidden;border-bottom:3px solid #2e2c2a;border-top:3px solid #2e2c2a;padding-bottom:10px;position:relative}
 #contactArea p{color:#fff}
 #columns{width:40%;float:right;margin:2%}
 .fiveDay{background-color:#babbbc;border:2px solid #2e2c2a;width:96.7%;margin:3% 1.5%;text-align:center}
-#forecast{background-color:#47718a;border:1px solid #2e2c2a;width:50%;margin:2% auto;color:#fff}
+#forecast{background-color:#335F99;border:1px solid #2e2c2a;width:50%;margin:2% auto;color:#fff}
 #forecastTitle{margin:2% auto}
 #dailyForecast{display:flex;width:100%}
 #dailyForecast img{width:90%;border-top:1px solid #2e2c2a}
 #dailyForecast article{border:1px solid #2e2c2a;width:20%}
-.townSection{text-align:center;width:96.7%;margin:0 auto;color:#babbbc;background-color:#214459;border:2px solid #2e2c2a;text-shadow:3px 3px 8px #2e2c2a}
-#weatherHeader{margin-left:20px;color:#214459}
+.townSection{text-align:center;width:96.7%;margin:0 auto;color:#babbbc;background-color:#062965;border:2px solid #2e2c2a;text-shadow:3px 3px 8px #2e2c2a}
+#weatherHeader{margin-left:20px;color:#062965}
 .galleryPic{width:100%;border-bottom:1px solid #2e2c2a}
 .galleryBox{width:45%;border:1px solid #2e2c2a;margin:1em}
 figure figcaption{padding:10px}
@@ -47,10 +47,10 @@ figure figcaption{padding:10px}
 form{width:50%;margin-left:auto;margin-right:auto}
 #textBox{width:99%;height:50px}
 #shareHeading{text-align:center}
-.homePage article{width:25%;text-align:center;background-color:#fff;margin:20px 20px 20px 20px;border:4px solid #214459;box-shadow:4px 4px 8px #2e2c2a}
+.homePage article{width:25%;text-align:center;background-color:#fff;margin:20px 20px 20px 20px;border:4px solid #062965;box-shadow:4px 4px 8px #2e2c2a}
 .homePage section{display:flex;flex-direction:row;justify-content:center;background-color:#b1b0ae}
 #townTitle{text-align:center}
-.homePage section h2{color:#214459}
+.homePage section h2{color:#062965}
 .homePage section p{width:70%;margin:10px auto}
 .homePage article img{width:100%}
 .homePage section p:nth-child(2){font-style:italic}

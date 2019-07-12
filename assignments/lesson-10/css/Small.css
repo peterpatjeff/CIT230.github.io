@@ -10,8 +10,8 @@ nav a:link{text-decoration:none;color:#fff;font-size:16px;text-transform:upperca
 .hiddenMenu:hover a,nav a:hover{color:#8d8c8a;text-shadow:3px 3px 6px #2e2c2a}
 nav a:visited{color:#fff}
 nav a:active{color:#d8da76;text-shadow:3px 3px 6px #2e2c2a}
-.topnav{background-color:#214459}
-nav ul li .selected{background-color:##d3d3d3;padding:10px}
+.topnav{background-color:#062965}
+nav ul li .selected{background-color:#d3d3d3;padding:10px}
 nav ul li a{display:block;padding:.8rem 2%;border-top:1px solid #2e2c2a}
 nav button{margin:.2rem 2%;background-color:transparent;border:none;font-size:1.5rem;color:#fff;display:inline-block}
 button:focus{outline:0}
@@ -24,7 +24,7 @@ footer{background-color:#d3d3d3;overflow:hidden;padding:10px 5px;border-bottom:3
 #attribution a{text-decoration:underline;color:#fff}
 #sky{width:97%;margin:0 1.5%}
 .pageTitle{text-align:center;font-size:40px}
-#weatherbox{background-color:##d3d3d3;position:absolute;left:5%;top:10%;padding:10px 30px;border:2px solid #214459;color:#fff;font-size:2.5vw}
+#weatherbox{background-color:#d3d3d3;position:absolute;left:5%;top:10%;padding:10px 30px;border:2px solid #062965;color:#fff;font-size:2.5vw}
 #bigImage{position:relative}
 h4{color:#2e2c2a;text-shadow:3px 3px 8px #fff}
 .articleBox{background-color:#babbbc;border:2px solid #2e2c2a;width:96.7%;margin:5% 1.5%}
@@ -39,23 +39,23 @@ h4{color:#2e2c2a;text-shadow:3px 3px 8px #fff}
 #column2{float:right;margin:2.5%}
 #columns{width:100%}
 .hidden{display:none}
-.townSection{text-align:center;width:96.7%;margin:0 auto;color:#babbbc;background-color:#214459;border:2px solid #2e2c2a;text-shadow:3px 3px 8px #2e2c2a}
-h2 #weatherHeader{margin-left:20px;color:#214459}
+.townSection{text-align:center;width:96.7%;margin:0 auto;color:#babbbc;background-color:#062965;border:2px solid #2e2c2a;text-shadow:3px 3px 8px #2e2c2a}
+h2 #weatherHeader{margin-left:20px;color:#062965}
 .galleryPic{width:100%;border-bottom:1px solid #2e2c2a}
 .galleryBox{width:100%;border:1px solid #2e2c2a;margin:1.5em}
 figure figcaption{padding:10px}
 #picGallery{display:flex;flex-direction:row;flex-wrap:wrap}
-#weatherHeader{margin-left:20px;color:#214459}
+#weatherHeader{margin-left:20px;color:#062965}
 #thankYouBox{width:80%;margin-left:auto;margin-right:auto}
 #thankYouBox h2,p{text-align:center}
 #thankYouImage img{width:50%;margin-left:auto;margin-right:auto;margin-bottom:1em;display:block}
 form{width:80%;margin-left:auto;margin-right:auto}
 #textBox{width:99%;height:50px}
 #shareHeading{text-align:center}
-.homePage article{width:80%;text-align:center;background-color:#fff;margin:25px auto;border:4px solid #214459;box-shadow:4px 4px 8px #2e2c2a;position:relative}
+.homePage article{width:80%;text-align:center;background-color:#fff;margin:25px auto;border:4px solid #062965;box-shadow:4px 4px 8px #2e2c2a;position:relative}
 .homePage section{background-color:#b1b0ae;padding:20px}
 #townTitle{text-align:center}
-.homePage section h2{color:#214459}
+.homePage section h2{color:#062965}
 .homePagesection p{width:70%;margin:10px auto}
 article img{width:100%}
 .homePage section p:nth-child(2){font-style:italic}
