@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery </title>
+    <meta name="description" content="Images ">
+    <link rel="stylesheet"  href="css/Normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/Small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/Medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/Large.css">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <picture class="headerItem">
+                <source srcset="images/logo.png" media="(min-width: 731px)">
+                <img id="logo" src="images/smallLogo.png" alt="Extreme Weather Forecast Logo"/>
+            </picture>
+            <div class="headerItem">
+                <h1>Extreme Weather Forecast</h1>
+                <div class="motto">
+                    <p>Forecasting the Extreme </p>
+                </div>
+            </div>
+        </header>
+        <div>
+            <nav class="topnav">
+                <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                    <button>&#9776;</button>
+                    <p>MENU</p>
+                </div>
+                    <ul class="hide" id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="preston.html">Preston</a></li>
+                        <li><a href="sodaSprings.html">Soda Springs</a></li>
+                        <li><a href="fishHaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li class="currentPage"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+            </nav>
+        </div>
+    <main>
+        <section id="weatherGallery">
+            <h2 id="weatherHeader">Gallery</h2>
+
+            <div id="picGallery">
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/lake.jpg" alt="lake at sunset"/>
+                    <figcaption>lake</figcaption>
+                </figure>
+                
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/rainbow.jpg" alt="rainbow over road"/>
+                    <figcaption>Rainbow </figcaption>
+                </figure>
+
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/lightning.jpg" alt="lightning in purple sky"/>
+                    <figcaption>lightning </figcaption>
+                </figure>
+                            
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/fog.jpg" alt="fog among pine trees"/>
+                    <figcaption>Fog </figcaption>
+                </figure>
+                
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/snow.jpg" alt="snow on mountain top"/>
+                    <figcaption>Snow </figcaption>
+                </figure>
+                
+                <figure class="galleryBox">
+                    <img class="galleryPic" src="images/sunset.jpg" alt="beautiful cloudy sky at sunset with orange and yellow colors"/>
+                    <figcaption> sunset</figcaption>
+                </figure>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019  Weather Extreme Weather Forecast</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
