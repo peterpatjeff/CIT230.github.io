@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Weather Forecast</title>
+    <meta name="description" content="Overview of local Idaho towns on Neighborhood Weather. Includes town information for Preston, Soda Springs, and Fish Haven">
+    <link rel="stylesheet"  href="css/Normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/Small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/Medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/Large.css">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <picture class="headerItem">
+                <source srcset="images/logo.png" media="(min-width: 731px)">
+                <img id="logo" src="images/smallLogo.png" alt="Neighborhood Weather Logo"/>
+            </picture>
+            <div class="headerItem">
+                <h1>Extreme Weather Forecast</h1>
+                <div class="motto">
+                    <p>Forecasting the Extreme</p>
+                </div>
+            </div>
+        </header>
+        <div>
+            <nav class="topnav">
+                <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                    <button>&#9776;</button>
+                    <p>MENU</p>
+                </div>
+                    <ul class="hide" id="primaryNav">
+                        <li class="currentPage"><a href="index.html">Home</a></li>
+                        <li><a href="preston.html">Preston</a></li>
+                        <li><a href="sodaSprings.html">Soda Springs</a></li>
+                        <li><a href="fishHaven.html">Fish Haven</a></li>
+                        <li><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+            </nav>
+        </div>
+    <main class="homePage">
+         <h1 id=townTitle>Regional Weather</h1>
+         <section id="localTowns">
+            <article>
+                <h2>Fish Haven</h2>
+                <p>This is Fish Heaven.</p>
+                <p>Year Founded: 1864</p>
+                <p>Population: 501</p>
+                <p>Annual Rain Fall:14.2</p>
+                <img src="images/fishHaven.jpg">
+            </article>
+            <article>
+                <h2>Preston</h2>
+                <p>Home of Napoleon Dynamite.</p>
+                <p>Year Founded: 1866</p>
+                <p>Population: 5204</p>
+                <p>Annual Rain Fall:16.65</p>
+                <img src="images/preston.jpg">
+            </article>
+            <article>
+                <h2>Soda Springs</h2>
+                <p>Historic Oregon Trail. The Soda is on Us.</p>
+                <p>Year Founded: 1858</p>
+                <p>Population: 2985</p>
+                <p>Annual Rain Fall:15.75</p>
+                <img src="images/sodaSprings.jpg"></article>
+            </section>
+    </main>
+
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019 Extreme Weather Forecast</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/townHelper.js"></script>
+    <script src="scripts/townInfo.js"></script>
+</body>
+</html>

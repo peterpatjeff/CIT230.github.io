@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <meta name="description" content="Share your local weather ">
+    <link rel="stylesheet"  href="css/Normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/Small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/Medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/Large.css">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <picture class="headerItem">
+                <source srcset="images/logo.png" media="(min-width: 731px)">
+                <img id="logo" src="images/smallLogo.png" alt="Extreme Weather Forecast Logo"/>
+            </picture>
+            <div class="headerItem">
+                <h1>Extreme Weather Forecast</h1>
+                <div class="motto">
+                    <p>Forecasting the Extreme</p>
+                </div>
+            </div>
+        </header>
+        <div>
+            <nav class="topnav">
+                <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                    <button>&#9776;</button>
+                    <p>MENU</p>
+                </div>
+                    <ul class="hide" id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="preston.html">Preston</a></li>
+                        <li><a href="sodaSprings.html">Soda Springs</a></li>
+                        <li><a href="fishHaven.html">Fish Haven</a></li>
+                        <li class="currentPage"><a href="stormcenter.html">Storm Center</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+            </nav>
+        </div>
+    <main>
+        <h2 id="shareHeading">Share Storm Information:</h2>
+        <form action="thanks.html"><br>
+            <fieldset>
+                <legend>Personal information</legend><br>
+                Full name: <br>
+                <input type="text" name="fullname" placeholder="full name" pattern="[A-Za-z].{5,}"><br><br>
+                Email: <br>
+                <input type="email" name="email" placeholder="johnsmith@abc.com"><br><br>
+                Phone number: <br>
+                <input type="tel" name="phonenumber" required><br><br>
+                Zip code: <br>
+                <input type="number" name="zipCode" required><br><br>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Storm Information</legend><br>
+                <label>Storm date</label><br>
+                <input type="date" name="enterDate"><br><br>
+                <label>Storm type</label><br>
+                <input list="storms" name="stormList"> 
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                    <option value="Blizzard">
+                    <option value="Drifting Snow">
+                </datalist><br><br>
+                <label>Storm severity (1 to 10): </label><br>
+                <input type="range" id="rating" name="stormSeverity" value="5" min="1" max="10" step="1" oninput = "adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                <span id="ratingvalue">5</span><br><br>
+                <label>region: </label><br>
+                <select name="regionSelection">
+                    <option value="selectRegion" disabled>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodaSprings">Soda Springs</option>
+                    <option value="fishHaven">Fish Haven</option>
+                </select><br><br>
+                <label>User in-danger level: </label><br>
+                <input type="radio" name="dangerLevel" value="yes">Yes
+                <input type="radio" name="dangerLevel" value="maybe">Maybe
+                <input type="radio" name="dangerLevel" value="no">No<br><br>
+                <label>Comments: </label><br>
+                <textarea id="textBox" name="leaveComments"></textarea><br><br>
+            </fieldset>
+            <br><input type="submit" name="submitButton" value="Send Message"><br><br>
+        </form>
+    </main>
+
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019 Weather Extreme Weather Forecast</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

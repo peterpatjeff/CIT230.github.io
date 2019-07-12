@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Haven Weather</title>
+    <meta name="description" content="current weather for Fish Haven. ">
+    <link rel="stylesheet"  href="css/Normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/Small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 999px)" href="css/Medium.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="css/Large.css">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture class="headerItem">
+            <source srcset="images/logo.png" media="(min-width: 731px)">
+            <img id="logo" src="images/smallLogo.png" alt="Extreme Weather Forecast Logo"/>
+        </picture>
+        <div class="headerItem">
+            <h1>Extreme Weather Forecast</h1>
+            <div class="motto">
+                <p>Forecasting the Extreme </p>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav class="topnav">
+            <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                <button>&#9776;</button>
+                <p>MENU</p>
+            </div>
+                <ul class="hide" id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodaSprings.html">Soda Springs</a></li>
+                    <li class="currentPage"><a href="fishHaven.html">Fish Haven</a></li>
+                    <li ><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <h2 class="pageTitle">Fish Haven</h2>    
+            <div id="bigImage">  
+                <picture>
+                    <source srcset="images/skyLargeFishHaven.jpg" media="(min-width: 731px)">
+                    <img id="sky" src="images/skySmallFishHaven.jpg" alt="Beautiful sky"/>
+                </picture> 
+                <div id="weatherbox">
+                    <h4>Weather Summary</h4>
+                    <p>Currently: <span id="current"></span></p>
+                    <p>High: <span id="highTemp"></span>&#176; F</p>
+                    <p>Wind Chill: <span id ="windChill"></span>&#176; F</p>
+                    <p>Humidity: <span id="humidity"></span>&#37;</p>
+                    <p>Wind Speed: <span id="speed"></span> mph</p>
+                </div>
+            </div> 
+        </section>
+
+        <div class="hidden, fiveDay">
+            <h4 class="hidden" id="forecastTitle">5 Day Forecast</h4>
+            <div class="hidden" id="forecast">
+                <section id="dailyForecast"></section>  
+            </div>
+        </div>
+
+        <section class="townSection">
+            <h3>Town Events</h3>
+            <div id="events"></div>
+        </section>
+      
+        <article class="articleBox">
+            <h3 id="articleTitle">Fish Haven Article</h3>
+            <h5 id="authorByline">by author</h5>
+            <picture>
+                <source srcset="images/fogTreesLarge.jpg" media="(min-width: 731px)">
+                <img id="articlePic" src="images/fogTreesSmall.jpg" alt="Pine Trees in the fog"/>
+            </picture>
+            <p id="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed 
+                arcu non odio. Aliquam ultrices sagittis orci a. In dictum non consectetur a 
+                erat nam at lectus. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. 
+                Massa eget egestas purus viverra accumsan in. Ac tortor vitae purus faucibus ornare 
+                suspendisse sed nisi lacus. Viverra suspendisse potenti nullam ac tortor vitae. 
+                Sed ullamcorper morbi tincidunt ornare. Augue mauris augue neque gravida in fermentum et 
+                sollicitudin ac. Euismod nisi porta lorem mollis aliquam ut. Integer quis auctor elit sed 
+                vulputate.</p>
+        </article>
+
+        <div id="contactArea">
+                <div id="columns">
+                    <div id="column1">
+                        <p>Company Name</p>
+                        <p>Company Address</p>
+                        <p>Company 2nd line Address</p>
+                    </div> 
+                    <div id="column2">
+                        <p>Company Phone Number</p>
+                        <p>Company Email Address</p>
+                        <p>Company Info</p>
+                    </div>
+                </div>
+                <picture>
+                    <source srcset="images/map.jpg" media="(min-width: 731px)">
+                    <img id="PrestonMap" src="images/mapSmall.jpg" alt="Map of Preston Area"/>
+                </picture>
+        </div>
+    </main>
+    <footer>
+        <p id="currentDate"></p>
+        <p id="copyright">&copy; 2019 Extreme Weather Forecast</p>
+        <p id="attribution">Updated weather data gathered from <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+    </footer>
+    <script>
+         var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42";
+         var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42";
+    </script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/townHelper.js"></script>
+    <script src="scripts/FishHaven.js"></script>
+</body>
+</html>
