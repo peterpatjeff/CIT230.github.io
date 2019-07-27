@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Temple Inn & Suites - Offering quality accomodations at an affordable price. Close proximity to LDS temples - Reception Information</title>
+   <meta name="description" content="Temple Inn & Suites - Quality accomodations at an affordable price - Reception accommodations">
+   <link rel="stylesheet"  href="css/normalize.css">
+   <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+   <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+   <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+   <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Great+Vibes" rel="stylesheet">
+</head>
+<body>
+   <header>
+      <div id="pageTop">
+         <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+         <nav class="topnav">
+            <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+               <button>&#9776;</button>
+            </div>
+            <!-- Dropdown navbar inspired by code found on W3Schools -->
+            <ul class="hide" id="primaryNav">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="temples.html">Temples</a></li>
+               <div class="dropdown">
+                  <li><a href="services.html">Services</a></li>
+                  <div class="dropdown-content">
+                     <li class="currentPage"><a href="receptions.html">Receptions</a></li>
+                     <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                  </div>
+               </div>
+               <li><a href="reservations.html">Reservations</a></li>
+               <li id="lastNavItem"><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main class="centerPage">
+      <h2>Reception Accommodations</h2> 
+      <h3><i>For the most memorable moments of your life!</i></h3>
+      <div id="hotelRoom">
+         <picture>
+            <source srcset="images/reception-room-large.jpg" media="(min-width: 950px)">
+            <img src="images/reception-room-small.jpg" alt="fancy hotel reception room set up for a wedding party"/>
+         </picture>
+      </div>
+      <section id="receptionBox">
+         <h3>Amenities include:</h3>
+         <ul class="amenitiesColumn">
+            <li>Table and chair rental</li>
+            <li>Luxurious decor</li>
+            <li>Catering available</li>
+            <li>Kitchen use</li>
+            <li>Set-up/clean-up options</li>
+            <li>Wait service on hand</li>
+         </ul>
+      </section>
+      <h2><i>Creating wonderful memories for you and your loved ones!</i></h2>
+      <button class="button"><a href="reservations.html">Book Reservation Now</a></button>
+      <form id="contactForm">
+         <fieldset>
+            <legend>Contact Us</legend><br>
+            <div id="formContent">
+               Name: <br>
+               <input type="text" name="name" placeholder="Your name..." pattern="[A-Za-z].{5,}" required><br><br>
+               Email: <br>
+               <input type="email" name="email" placeholder="johnsmith@abc.com" required><br><br>
+               Subject: <br>
+               <input type="text" name="subject"><br><br>
+               Message: <br>
+               <textarea id="textBox" name="leaveComments"></textarea><br><br>
+               <button type="submit" form="contactForm" value="Send Message" id="contactSubmit">Submit</button><br><br>
+            </div>
+         </fieldset><br><br>
+      </form>
+      <h3>Call for pricing or more information</h3>
+      <h3>(888) 888-8888</h3>
+   </main>
+
+   <footer>
+      <p><a href="resources.html">Resources</a></p>
+      <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+   </footer>
+   <script src="scripts/hamburger.js"></script>
+            
+</body>
+</html>

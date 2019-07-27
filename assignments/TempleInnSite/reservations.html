@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites - Offering quality accomodations at an affordable price. Close proximity to LDS temples - Make reservations today</title>
+    <meta name="description" content="Introducing Temple Inn & Suites - Quality accomodations at an affordable price - Reservation Page">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Great+Vibes" rel="stylesheet">
+</head>
+<body>
+        <header>
+           <div id="pageTop">
+               <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+               <nav class="topnav">
+                  <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                     <button>&#9776;</button>
+                  </div>
+                  <!-- Dropdown navbar inspired by code found on W3Schools -->
+                     <ul class="hide" id="primaryNav">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="temples.html">Temples</a></li>
+
+                           <div class="dropdown">
+                              <li><a href="services.html">Services</a></li>
+                              <div class="dropdown-content">
+                                 <li><a href="receptions.html">Receptions</a></li>
+                                 <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                              </div>
+                           </div>
+
+                           <li class="currentPage"><a href="reservations.html">Reservations</a></li>
+                           <li id="lastNavItem"><a href="contact.html">Contact</a></li>
+                     </ul>
+               </nav>
+         </div>
+      </header>
+
+      <main class="centerPage">
+         <h2>Reservations</h2> 
+
+         <form>
+            <section id="reservationsForm">
+               <fieldset class="formBox">
+                  <legend>Personal Information</legend><br>
+                  <div id="personalContent" class="inputLength">
+                     Full Name: <br>
+                     <input type="text" name="name" placeholder="Your full name..." pattern="[A-Za-z].{5,}" required><br><br>
+                     Email: <br>
+                     <input type="email" name="email" placeholder="johnsmith@abc.com" required><br><br>
+                     Phone number: <br>
+                     <input type="tel" name="phonenumber" required><br><br>
+                     State or Country: <br>
+                     <input type="text" name="state"><br>
+                  </div>
+               </fieldset>
+
+               <fieldset class="formBox">
+                  <legend>Trip Information</legend>
+                  <div id="tripContent">
+                     Select location:<br>
+                     <input type="radio" name="location" value="Boise"> Boise, ID <br>
+                     <input type="radio" name="location" value="Idaho Falls"> Idaho Falls, ID <br>
+                     <input type="radio" name="location" value="Meridian"> Meridian, ID <br>
+                     <input type="radio" name="location" value="Rexburg"> Rexburg, ID <br>
+                     <input type="radio" name="location" value="Twin Falls"> Twin Falls, ID <br><br>
+                     <div class="inputLength">
+                        Check-in Date: <br>
+                        <input type="date" name="check-in"><br><br>
+                        Check-out Date: <br>
+                        <input type="date" name="check-out"><br><br>
+                     </div>
+                  </div>
+               </fieldset>
+
+               <fieldset class="formBox">
+                  <legend>Room Information</legend>
+                  <div id="roomContent">
+                     Number of rooms:<br>
+                     <input type="number" name="quantity" min="1" max="30"><br>
+                     <div class="inputLength">
+                        Room type:<br>
+                        <input list="rooms" name="roomList"> 
+                        <datalist id="rooms">
+                           <option value="King Size Suite">
+                           <option value="Queen Size Suite">
+                           <option value="Twin Size Suite">
+                           <option value="King Size Suite with Kitchenette">
+                           <option value="Queen Size Suite with Kitchenette">
+                        </datalist><br><br>
+                        Special accommodations / Comments: <br>
+                        <textarea id="commentBox" name="leaveComments"></textarea><br><br>
+                     </div>
+                  </div>
+               </fieldset>
+            </section>
+            <input type="submit" name="submitButton" value="Submit" id="submitButton"><br><br>
+         </form>
+
+         <h2 class="greatVibes">Temple Inn & Suites</h2>
+      </main>
+
+      <footer>
+         <p><a href="resources.html">Resources</a></p>
+         <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+      </footer>
+      <script src="scripts/hamburger.js"></script>
+            
+</body>
+</html>

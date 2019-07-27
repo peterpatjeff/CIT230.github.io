@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Temple Inn & Suites - Offering quality accomodations at an affordable price. Close proximity to LDS temples - Contact Page</title>
+   <meta name="description" content="Introducing Temple Inn & Suites - Quality accomodations at an affordable price - Contact Page">
+   <link rel="stylesheet"  href="css/normalize.css">
+   <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+   <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+   <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+   <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Great+Vibes" rel="stylesheet">
+</head>
+<body>
+   <header>
+      <div id="pageTop">
+         <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+         <nav class="topnav">
+            <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+               <button>&#9776;</button>
+            </div>
+            <!-- Dropdown navbar inspired by code found on W3Schools -->
+            <ul class="hide" id="primaryNav">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="temples.html">Temples</a></li>
+               <div class="dropdown">
+                  <li><a href="services.html">Services</a></li>
+                  <div class="dropdown-content">
+                     <li><a href="receptions.html">Receptions</a></li>
+                     <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                  </div>
+               </div>
+               <li><a href="reservations.html">Reservations</a></li>
+               <li class="currentPage" id="lastNavItem"><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main class="centerPage">
+      <h2>Contact Information</h2> 
+      <h2 class="greatVibes">Temple Inn & Suites</h2>
+      <p>4800 Montgomery Ln #300</p>
+      <p>Bethesda, Maryland 20814 USA</p>
+      <p>(888) 888-8888</p>
+      <button class="button"><a href="reservations.html">Book Reservation Now</a></button>
+      <form id="contactForm">
+         <fieldset>
+            <legend>Contact Us</legend><br>
+            <div id="formContent">
+               Name: <br>
+               <input type="text" name="name" placeholder="Your name..." pattern="[A-Za-z].{5,}" required><br><br>
+               Email: <br>
+               <input type="email" name="email" placeholder="johnsmith@abc.com" required><br><br>
+               Subject: <br>
+               <input type="text" name="subject"><br><br>
+               Message: <br>
+               <textarea id="textBox" name="leaveComments"></textarea><br><br>
+               <button type="submit" form="contactForm" value="Send Message" id="contactSubmit">Submit</button><br><br>
+            </div>
+         </fieldset><br><br>
+      </form>
+      <div id="googleMap">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.40483702856!2d-77.09772048432363!3d38.98325594948311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800+Montgomery+Ln%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555008846264!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+   </main>
+
+   <footer>
+      <p><a href="resources.html">Resources</a></p>
+      <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+   </footer>
+   <script src="scripts/hamburger.js"></script>
+</body>
+</html>

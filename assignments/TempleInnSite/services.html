@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites - Offering quality accomodations at an affordable price. Close proximity to LDS temples - Services Offered</title>
+    <meta name="description" content="Temple Inn & Suites - Quality accomodations at an affordable price - Services Offered">
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Great+Vibes" rel="stylesheet">
+</head>
+<body>
+        <header>
+           <div id="pageTop">
+               <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+               <nav class="topnav">
+                  <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                     <button>&#9776;</button>
+                  </div>
+                  <!-- Dropdown navbar inspired by code found on W3Schools -->
+                     <ul class="hide" id="primaryNav">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="temples.html">Temples</a></li>
+
+                           <div class="dropdown">
+                              <li class="currentPage"><a href="services.html">Services</a></li>
+                              <div class="dropdown-content">
+                                 <li><a href="receptions.html">Receptions</a></li>
+                                 <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                              </div>
+                           </div>
+
+                           <li><a href="reservations.html">Reservations</a></li>
+                           <li id="lastNavItem"><a href="contact.html">Contact</a></li>
+                     </ul>
+               </nav>
+         </div>
+      </header>
+
+      <main class="centerPage" id="servicesContent">
+         <h1>Services Offered</h1><br>
+         <h2>Free Amenities</h2>
+         <div class="servicesColumn">
+            <ul>
+               <li>Breakfast</li>
+               <li>Exercise/Workout Room</li>
+               <li>Indoor pool</li>
+               <li>WiFi high-speed internet access and smart TVs</li>
+               <li>Parking</li>
+               <li>Temple shuttle</li>
+               <li>Family search center - supports family search and ordinance work</li>
+               <li>Family history consultation and family ordinance card service</li>
+               <li>Access to changing rooms and bathroom facilities</li>
+            </ul>
+         </div>
+         <h2>Other Specialized Services</h2>
+         <div class="servicesColumn">
+            <ul id="serviceLinks">
+               <li>Playroom & low-cost, short-term babysitting services for children of temple patrons</li>
+               <li>Long-term stay accommodations in Kitchenette suites for full-time <a href="templeMissionaries.html">temple missionaries</a></li>
+               <li>Temple history themed reception and sitting area</li>
+               <li>Wedding <a href="receptions.html">reception hall</a> with optional catering/kitchen access</li>
+            </ul>
+         </div>
+
+
+
+
+
+         <button class="button"><a href="reservations.html">Book Reservation Now</a></button>
+
+
+      
+
+      <footer>
+         <p><a href="resources.html">Resources</a></p>
+         <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+      </footer>
+      <script src="scripts/hamburger.js"></script>
+            
+</body>
+</html>

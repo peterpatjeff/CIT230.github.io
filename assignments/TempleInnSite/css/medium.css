@@ -1,0 +1,429 @@
+/* General styling for website */
+
+h1, h2 {
+   font-family: Merriweather, serif;
+   font-weight: lighter;
+} 
+
+a {
+   text-decoration: none;
+   color: #262626;
+}
+
+
+/* Styling for header */
+
+header {
+   display: flex;
+   justify-content: center;
+   justify-content: space-evenly;
+}
+
+#pageTop {
+   background-color: #8fadbd;
+   border-bottom: 1px solid #262626;
+   border-top: 1px solid #262626;
+   width: 100%;
+}
+
+#logo {
+   font-family: Great Vibes, serif;
+   font-size: 60px;
+   margin-left: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: #262626;
+   text-decoration: none;
+}
+
+
+/* Styles for nav bar */
+
+.currentPage a {
+   background-color: #4e7286;
+   color: #bfbfbf;
+}
+
+.currentPage a:hover {
+   color: #bfbfbf;
+}
+
+ul {
+   margin: 0;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+nav a:link {
+   font-family: Merriweather, serif;
+   text-decoration: none;
+   background-color: #8fadbd;
+   color: #262626;
+   font-size: 16px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+nav a:hover, .hiddenMenu:hover a {
+   color:  #4e7286;
+   text-shadow: 1px 1px .5px #5d5d5d;
+}
+
+nav a:active {
+   color: #fff;
+}
+
+nav ul li .selected {
+   color: #fff;
+   padding: 10px;
+}
+
+nav ul li a {
+   display: block;
+   padding: .8rem 2%;
+   border-top: 1px solid #262626;
+}
+
+#lastNavItem {
+   border-bottom: 1px solid #262626;
+}
+
+#primaryNav {
+   position: center;
+   top: 10%;
+}
+
+
+/* Styles for Hamburger Nav Menu */
+
+nav button {
+   margin: .2rem 2%;
+   background-color: transparent;
+   border: none;
+   font-size: 2rem;
+   color: #262626;
+   display: inline-block;
+}
+
+button:focus {
+   outline: 0;
+}
+
+nav p {
+   color: #262626;
+   font-size: 1.3rem;
+   display: inline-block;
+   margin: 0;
+}
+
+nav button:hover, nav p:hover {
+   color:  #4e7286;
+   text-shadow: 1px 1px .5px #5d5d5d;
+   text-decoration: none;
+}
+
+.wholeHamburger {
+   position: absolute;
+   right: 10%;
+   top: 2%;
+   overflow: hidden;
+}
+
+nav ul.hide {
+   display: none;
+}
+
+
+/* General Styling for body */
+
+body {
+   font-family: Open Sans, sans-serif;
+}
+ 
+
+/* General Styling for footer */
+
+footer {
+   background-color: #8fadbd;
+   border-top: 2px solid #5d5d5d;
+   padding-bottom: 15px;
+}
+
+footer p {
+   text-align: center;
+}
+
+footer a {
+   color: #4e7286;
+   text-decoration: underline;
+}
+
+
+/* Styling for Home Page */
+
+#mainHotelRoom {
+   width: 100%;
+}
+
+.homepage section {
+   width: 100%;
+}
+
+.columns {
+   display: flex;
+   justify-content: space-around; 
+}
+
+.picCaption {
+   font-size: 80%;
+   display: block;
+   margin: 2% 2%;
+}
+
+.columns figure {
+   border-radius: 11%;
+   background-color: #bfbfbf;
+   font-family: Merriweather, serif;
+   text-align: center;  
+   width: 45%; 
+   box-shadow: 2px 2px 6px 2px #262626;
+}
+
+.columns img {
+   border-top-left-radius:11%;
+   border-top-right-radius:11%;
+   width: 100%;
+}
+
+.button {
+   border-radius: 10px;
+   background-color: #bfbfbf;
+   text-align: center;
+   width: 225px;
+   margin: 20px auto;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   font-weight: 900;
+}
+
+.button a:hover {
+   color: #4e7286;
+}
+
+#tagLine {
+   display: flex;
+   justify-content: center;
+   margin: 20px auto;
+   font-size: 20px;
+   font-weight: lighter;
+}
+
+#featuredTemple {
+   background-color: #8fadbd;
+   border-top: 2px solid #5d5d5d;
+   border-bottom: 2px solid #5d5d5d;
+   display: flex;
+   justify-content: center;
+}
+
+#featuredColumn1 {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+   margin-top: 10px;
+}
+
+#featuredColumn1 img {
+   border: 1px solid #5d5d5d;
+   border-radius: 8px;
+}
+
+#featuredColumn2 {
+   display: flex;
+   flex-direction: column;
+   margin-left: 50px;
+   margin-top: 10px;
+}
+
+#call h2 {
+   text-align: center;
+}
+
+/* Resource Page Styling */
+
+.centerPage {
+   text-align: center;
+}
+
+#resourcePage a {
+   text-decoration: underline;
+   color: #4e7286;
+}
+
+
+/* Contact Page Styling */
+
+.greatVibes {
+   font-family: Great Vibes, serif;
+   font-size: 40px;
+}
+
+#contactForm {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+#contactForm fieldset {
+   width: 60%;
+   text-align: left;
+   margin: 0px auto 25px auto;
+}
+
+#formContent {
+   margin: 10px 20px;
+}
+
+#formContent input, #formContent textarea {
+   width: 100%;
+   margin: 2px 0px;
+   padding: 5px;
+}
+
+#formContent textarea {
+   height: 80px;
+}
+
+#googleMap {
+   padding: 30px;
+}
+
+#contactSubmit {
+   width: 150px;
+   padding: 10px;
+}
+
+/* Services Page Styling */
+
+#serviceLinks a {
+   color: #4e7286;
+   text-decoration: underline;
+}
+
+#servicesContent ul {
+   display: flex;
+   flex-direction: column;
+}
+
+#servicesContent li {
+   padding: 10px;
+   text-align: left;
+   width: 100%;
+   margin: 0px 20px;
+}
+
+.servicesColumn {
+   display: flex;
+   justify-content: center;
+   margin: 0px auto 50px auto;
+}
+
+#longTermStay {
+   background-color: #bfbfbf;
+   border: 2px solid #5d5d5d;
+   border-radius: 25px;
+   width: 550px;
+   margin: 40px auto;
+}
+
+#hotelRoom {
+   margin: 40px auto;
+   width: 95%;
+}
+
+
+/* Reception Page Styling */
+
+#receptionBox {
+   background-color: #bfbfbf;
+   border: 2px solid #5d5d5d;
+   border-radius: 25px;
+   width: 250px;
+   margin: 40px auto;
+   padding: 20px;
+}
+
+#hotelRoom {
+   margin: 40px auto;
+   width: 95%;
+}
+
+.amenitiesColumn {
+   display: flex;
+   flex-direction: column;
+}
+
+.amenitiesColumn li {
+   padding: 10px;
+   text-align: left;
+   width: 100%;
+}
+
+
+/* Reservations Page Styling */
+
+#reservationsForm {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+#submitButton{
+   padding: 10px 15px;
+   margin: 20px;
+}
+
+.formBox {
+   padding: 20px;
+   margin: 20px 5px;
+   text-align: left;
+   width: 33%;
+}
+
+.formBox input, textarea {
+   padding: 5px;
+   margin: 5px;
+}
+
+#commentBox {
+   width: 93%;
+   height: 100px;
+}
+
+.inputLength input {
+   width: 93%;
+}
+
+
+/* Temples Page Styling */
+
+#temple2, #temple4 {
+   background-color: #bfbfbf;
+   border-top: 2px solid #5d5d5d;
+   border-bottom: 2px solid #5d5d5d;
+}
+
+#templePage img {
+   border-radius: 15px;
+   margin: 25px auto;
+}
+
+#templePage a {
+   color: #4e7286;
+   text-decoration: underline;
+}
