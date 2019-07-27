@@ -41,7 +41,7 @@ header {
 
 .currentPage a {
    color: #bfbfbf;
-   background-color: #4e7286;
+   background-color: #968a65;
 }
 
 .currentPage a:hover {
@@ -122,7 +122,7 @@ nav p {
 }
 
 nav button:hover, nav p:hover {
-   color:  #4e7286;
+   color:  #080704;
    text-shadow: 1px 1px .5px #5d5d5d;
    text-decoration: none;
 }
@@ -191,7 +191,7 @@ footer a {
 
 .columns figure {
    border-radius: 8%;
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    font-family: Merriweather, serif;
    text-align: center;  
    width: 70%; 
@@ -207,7 +207,7 @@ footer a {
 
 .button {
    border-radius: 10px;
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    text-align: center;
    width: 225px;
    margin: 20px auto;
