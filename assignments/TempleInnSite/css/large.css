@@ -5,7 +5,7 @@
 }
 
 h1, h2 {
-   font-family: Merriweather, serif;
+   font-family: 'Great Vibes', cursive;
    font-weight: lighter;
 } 
 
@@ -33,7 +33,7 @@ header {
 #pageTop {
    display: flex;
    justify-content: space-evenly;
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    width: 100%;
 }
 
@@ -110,7 +110,7 @@ a {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #8fadbd;
+	background-color: #f2dcb3;
 	min-width: 80px;
 	z-index: 1;
 	box-shadow: 0px 0px 5px #5d5d5d;
@@ -151,7 +151,7 @@ body {
 /* General Styling for footer */
 
 footer {
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    border-top: 2px solid #5d5d5d;
    padding-bottom: 15px;
 }
@@ -219,7 +219,7 @@ footer a {
 }
 
 #featuredTemple {
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    border-top: 2px solid #5d5d5d;
    border-bottom: 2px solid #5d5d5d;
    display: flex;

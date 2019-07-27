@@ -1,7 +1,7 @@
 /* General styling for website */
 
 h1, h2 {
-   font-family: Merriweather, serif;
+   font-family: 'Great Vibes', cursive;
    font-weight: lighter;
 } 
 
@@ -20,7 +20,7 @@ header {
 }
 
 #pageTop {
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    border-bottom: 1px solid #262626;
    border-top: 1px solid #262626;
    width: 100%;
@@ -60,7 +60,7 @@ nav ul {
 nav a:link {
    font-family: Merriweather, serif;
    text-decoration: none;
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    color: #262626;
    font-size: 16px;
    text-transform: uppercase;
@@ -147,7 +147,7 @@ body {
 /* General Styling for footer */
 
 footer {
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    border-top: 2px solid #5d5d5d;
    padding-bottom: 15px;
 }
@@ -224,7 +224,7 @@ footer a {
 }
 
 #featuredTemple {
-   background-color: #8fadbd;
+   background-color: #f2dcb3;
    border-top: 2px solid #5d5d5d;
    border-bottom: 2px solid #5d5d5d;
    display: flex;
