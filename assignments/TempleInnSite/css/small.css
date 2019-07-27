@@ -60,7 +60,7 @@ nav ul {
 nav a:link {
    font-family: Merriweather, serif;
    text-decoration: none;
-   background-color: #bfbfbf;
+   background-color: #968a65;
    color: #262626;
    font-size: 16px;
    text-transform: uppercase;
@@ -68,7 +68,7 @@ nav a:link {
 }
 
 nav a:hover, .hiddenMenu:hover a {
-   color:  #4e7286;
+   color:  #a79c7b;
    text-decoration: none;
 }
 
@@ -129,7 +129,7 @@ nav button:hover, nav p:hover {
 
 .wholeHamburger {
    position: absolute;
-   right: 30%;
+   right: 3%;
    top: 2%;
    overflow: hidden;
 }

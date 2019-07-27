@@ -72,7 +72,7 @@ nav a:active {
 }
 
 .currentPage a {
-   color: #bfbfbf;
+   color: #968a65;
    text-shadow: 1px 1px 2px #262626;
 }
 
@@ -188,7 +188,7 @@ footer a {
 
 .columns figure {
    border-radius: 11%;
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    font-family: Merriweather, serif;
    text-align: center;  
    width: 45%; 
@@ -203,7 +203,7 @@ footer a {
 
 .button {
    border-radius: 10px;
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    text-align: center;
    width: 225px;
    margin: 20px auto;
@@ -331,7 +331,7 @@ footer a {
 }
 
 #longTermStay {
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    border: 2px solid #5d5d5d;
    border-radius: 25px;
    width: 550px;
@@ -342,7 +342,7 @@ footer a {
 /* Reception Page Styling */
 
 #receptionBox {
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    border: 2px solid #5d5d5d;
    border-radius: 25px;
    width: 250px;
@@ -414,7 +414,7 @@ footer a {
 }
 
 #temple2, #temple4 {
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    border-top: 2px solid #5d5d5d;
    border-bottom: 2px solid #5d5d5d;
 }
