@@ -129,7 +129,7 @@ nav button:hover, nav p:hover {
 
 .wholeHamburger {
    position: absolute;
-   right: 10%;
+   right: 15%;
    top: 2%;
    overflow: hidden;
 }
