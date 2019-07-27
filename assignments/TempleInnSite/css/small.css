@@ -40,12 +40,12 @@ header {
 /* Styles for nav bar */
 
 .currentPage a {
-   color: #bfbfbf;
+   color: #968a65;
    background-color: #968a65;
 }
 
 .currentPage a:hover {
-   color: #bfbfbf;
+   color: #968a65;
 }
 
 ul {
@@ -129,7 +129,7 @@ nav button:hover, nav p:hover {
 
 .wholeHamburger {
    position: absolute;
-   right: 15%;
+   right: 30%;
    top: 2%;
    overflow: hidden;
 }
