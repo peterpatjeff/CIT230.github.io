@@ -341,7 +341,7 @@ footer a {
 }
 
 #longTermStay {
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    border: 2px solid #5d5d5d;
    border-radius: 25px;
    width: 80%;
@@ -357,7 +357,7 @@ footer a {
 /* Reception Page Styling */
 
 #receptionBox {
-   background-color: #bfbfbf;
+   background-color: #f2dcb3
    border: 2px solid #5d5d5d;
    border-radius: 25px;
    width: 250px;
@@ -418,7 +418,7 @@ footer a {
 /* Temples Page Styling */
 
 #temple2, #temple4 {
-   background-color: #bfbfbf;
+   background-color: #f2dcb3;
    border-top: 2px solid #5d5d5d;
    border-bottom: 2px solid #5d5d5d;
 }
