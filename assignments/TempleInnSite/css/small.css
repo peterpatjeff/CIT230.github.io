@@ -1,4 +1,4 @@
-/* General styling for website */
+/* Styling for website */
 
 h1, h2 {
    font-family: 'Great Vibes', cursive;
@@ -11,7 +11,7 @@ a {
 }
 
 
-/* Styling for header */
+/* Styling header */
 
 header {
    display: flex;
@@ -37,7 +37,7 @@ header {
 }
 
 
-/* Styles for nav bar */
+/* Styles bar */
 
 .currentPage a {
    color: #968a65;
@@ -97,74 +97,7 @@ nav ul li a {
    position: center;
    top: 10%;
 }
-
-
-/* Styles for Hamburger Nav Menu */
-
-nav button {
-   margin: .2rem 2%;
-   background-color: transparent;
-   border: none;
-   font-size: 2rem;
-   color: #262626;
-   display: inline-block;
-}
-
-button:focus {
-   outline: 0;
-}
-
-nav p {
-   color: #262626;
-   font-size: 1.3rem;
-   display: inline-block;
-   margin: 0;
-}
-
-nav button:hover, nav p:hover {
-   color:  #080704;
-   text-shadow: 1px 1px .5px #5d5d5d;
-   text-decoration: none;
-}
-
-.wholeHamburger {
-   position: absolute;
-   right: 3%;
-   top: 2%;
-   overflow: hidden;
-}
-
-nav ul.hide {
-   display: none;
-}
-
-
-/* General Styling for body */
-
-body {
-   font-family: Open Sans, sans-serif;
-}
-
-
-/* General Styling for footer */
-
-footer {
-   background-color: #f2dcb3;
-   border-top: 2px solid #5d5d5d;
-   padding-bottom: 15px;
-}
-
-footer p {
-   text-align: center;
-}
-
-footer a {
-   color: #4e7286;
-   text-decoration: underline;
-}
-
-
-/* Styling for Home Page */
+/* Styling Home  */
 
 #tagLine {
    display: flex;
@@ -260,19 +193,74 @@ footer a {
 }
 
 
-/* Resource Page Styling */
+/* Styles Hamburger Nav */
 
-.centerPage {
+nav button {
+   margin: .2rem 2%;
+   background-color: transparent;
+   border: none;
+   font-size: 2rem;
+   color: #262626;
+   display: inline-block;
+}
+
+button:focus {
+   outline: 0;
+}
+
+nav p {
+   color: #262626;
+   font-size: 1.3rem;
+   display: inline-block;
+   margin: 0;
+}
+
+nav button:hover, nav p:hover {
+   color:  #080704;
+   text-shadow: 1px 1px .5px #5d5d5d;
+   text-decoration: none;
+}
+
+.wholeHamburger {
+   position: absolute;
+   right: 3%;
+   top: 2%;
+   overflow: hidden;
+}
+
+nav ul.hide {
+   display: none;
+}
+
+
+/* Styling body */
+
+body {
+   font-family: Open Sans, sans-serif;
+}
+
+
+/* Styling footer */
+
+footer {
+   background-color: #f2dcb3;
+   border-top: 2px solid #5d5d5d;
+   padding-bottom: 15px;
+}
+
+footer p {
    text-align: center;
 }
 
-#resourcePage a {
-   text-decoration: underline;
+footer a {
    color: #4e7286;
+   text-decoration: underline;
 }
 
 
-/* Contact Page Styling */
+
+
+/* Contact Styling */
 
 .greatVibes {
    font-family: Great Vibes, serif;
@@ -315,7 +303,7 @@ footer a {
 }
 
 
-/* Services Page Styling */
+/* Services Styling */
 
 #serviceLinks a {
    color: #4e7286;
@@ -354,7 +342,7 @@ footer a {
 }
 
 
-/* Reception Page Styling */
+/* ReceptionStyling */
 
 #receptionBox {
    background-color: #f2dcb3
@@ -382,7 +370,7 @@ footer a {
 }
 
 
-/* Reservations Page Styling */
+/* Reservation Styling */
 
 #reservationsForm {
    display: flex;
@@ -415,7 +403,7 @@ footer a {
 }
 
 
-/* Temples Page Styling */
+/* Temples Styling */
 
 #temple2, #temple4 {
    background-color: #f2dcb3;
