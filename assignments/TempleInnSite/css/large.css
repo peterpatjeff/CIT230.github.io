@@ -1,4 +1,4 @@
-/* General styling for pages */
+/* General  */
 
 #hiddenMenu {
    display: none;
@@ -15,7 +15,7 @@ a {
 }
 
 
-/* Styling for header */
+/*  header */
 
 header {
    border-bottom: 2px solid #262626;
@@ -23,7 +23,7 @@ header {
 }
 
 #logo {
-   font-family: 'Petit Formal Script', cursive;
+   font-family: 'Tangerine', cursive;
    font-size: 60px;
    margin-left: 30px;
    margin-top: 20px;
@@ -57,7 +57,7 @@ nav ul {
 
 nav a:link {
    text-decoration: none;
-   font-family: Merriweather, serif;
+   font-family: 'Tangerine', cursive;
    color: #262626;
    font-size: 16px;
    text-transform: uppercase;
@@ -86,7 +86,7 @@ a {
 }
 
 
-/* Styling for drop down menu */
+/*  drop down menu */
 
 
 /* Dropdown container */
@@ -117,7 +117,7 @@ a {
 }
 
 
-/* Links within the dropdown */
+/* Links dropdown */
 .dropdown-content a {
 	float: none;
 	padding: 12px 16px;

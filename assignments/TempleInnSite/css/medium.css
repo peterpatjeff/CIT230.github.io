@@ -27,7 +27,7 @@ header {
 }
 
 #logo {
-   font-family: 'Petit Formal Script', cursive;
+   font-family: 'Tangerine', cursive;
    font-size: 60px;
    margin-left: 30px;
    margin-top: 20px;
@@ -58,7 +58,7 @@ nav ul {
 }
 
 nav a:link {
-   font-family: Merriweather, serif;
+   font-family: 'Tangerine', cursive;
    text-decoration: none;
    background-color: #f2dcb3;
    color: #262626;
