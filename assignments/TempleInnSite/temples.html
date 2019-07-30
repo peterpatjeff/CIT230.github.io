@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites </title>
+    <meta name="description" content=" Temple Inn & Suites ">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width:700px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+    <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+   </head>
+<body>
+   <header>
+      <div id="pageTop">
+         <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+         <nav class="topnav">
+            <div class="wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+               <button>&#9776;</button>
+            </div>
+            
+            <ul class="hide" id="primaryNav">
+               <li><a href="index.html">Home</a></li>
+               <li class="currentPage"><a href="temples.html">Temples</a></li>
+
+               <div class="dropdown">
+                  <li><a href="services.html">Services</a></li>
+                  <div class="dropdown-content">
+                     <li><a href="receptions.html">Receptions</a></li>
+                     <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                  </div>
+               </div>
+
+               <li><a href="reservations.html">Reservations</a></li>
+               <li id="lastNavItem"><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main class="centerPage" id="templePage"> 
+      <h1>Idaho Temples</h1> 
+
+      <section>
+         <div id="temple1">
+            <div class="templeLeft">
+               <picture>
+                  <img src="images/templeboise.jpg" alt="Boise temple"/>
+               </picture>
+            </div>
+            <div class="templeRight"> 
+               <h3>Boise, ID</h3>
+               <p>Current weather: <span id="BoiseCurrent"></span></p>
+               <p>Today's high temperature: <span id="BoiseHighTemp"></span>&#176; F</p>
+               <h4><a href="https://www.lds.org/temples/details/boise-idaho-temple?lang=eng">Temple Information</a></h4>
+               <section id="boiseTempleInfo"></section>
+            </div>
+         </div>
+
+         <div id="temple2">
+            <div class="templeLeft">
+               <picture>
+                  <img src="images/templeidaho-falls.jpg" alt="Idaho Falls "/>
+               </picture>
+            </div>
+            <div class="templeRight"> 
+               <h3>Idaho Falls, ID</h3>
+               <p>Current weather: <span id="IdahoFallsCurrent"></span></p>
+               <p>Today's high temperature: <span id="IdahoFallsHighTemp"></span>&#176; F</p>
+               <h4><a href="https://www.lds.org/temples/details/idaho-falls-idaho-temple?lang=eng">Temple Information</a></h4>
+               <section id="idahoFallsTempleInfo"></section>
+            </div>
+         </div>
+
+         <div id="temple3">
+            <div class="templeLeft">
+               <picture>
+               <img src="images/templemeridian.jpg" alt="Meridian temple "/>
+               </picture>
+            </div>
+            <div class="templeRight">
+               <h3>Meridian, ID</h3>
+               <p>Current weather: <span id="MeridianCurrent"></span></p>
+               <p>Today's high temperature: <span id="MeridianHighTemp"></span>&#176; F</p>
+               <h4><a href="https://www.lds.org/temples/details/meridian-idaho-temple?lang=eng">Temple Information</a></h4>
+               <section id="meridianTempleInfo"></section>
+            </div>
+         </div>
+
+         <div id="temple4">
+            <div class="templeLeft">
+               <picture>
+                  <img src="images/templerexburg.jpg" alt="Rexburg temple "/>
+               </picture>
+            </div>
+            <div class="templeRight"> 
+               <h3>Rexburg, ID</h3>
+               <p>Current weather: <span id="RexburgCurrent"></span></p>
+               <p>Today's high temperature: <span id="RexburgHighTemp"></span>&#176; F</p>
+               <h4><a href="https://www.lds.org/temples/details/rexburg-idaho-temple?lang=eng">Temple Information</a></h4>
+               <section id="rexburgTempleInfo"></section>
+            </div>
+         </div>
+
+         <div id="temple5">
+            <div class="templeLeft">
+               <picture>
+                  <img src="images/templetwin-falls.jpg" alt="Twin Falls temple "/>
+               </picture>
+            </div>
+            <div class="templeRight"> 
+               <h3>Twin Falls, ID</h3>
+               <p>Current weather: <span id="TwinFallsCurrent"></span></p>
+               <p>Today's high temperature: <span id="TwinFallsHighTemp"></span>&#176; F</p>
+               <h4><a href="https://www.lds.org/temples/details/twin-falls-idaho-temple?lang=eng">Temple Information</a></h4>
+               <section id="twinFallsTempleInfo"></section>
+            </div>
+         </div>
+      </section>  
+   </main>
+
+   <footer>
+      <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+   </footer>
+
+
+   <script src="scripts/templeInfo.js"></script>
+   <script>
+         var templeInfoUrl = "https://srbfkhansen.github.io/assignments/TempleInnSite/text/temple-summary-text.json"; // Access text file with temple information.
+         var templeUrls = [
+            "https://api.openweathermap.org/data/2.5/weather?lat=44&lon=-116&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42", // Boise
+            "https://api.openweathermap.org/data/2.5/weather?lat=43&lon=-112&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42", // Idaho Falls
+            "https://api.openweathermap.org/data/2.5/weather?lat=43&lon=-116&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42", // Meridian
+            "https://api.openweathermap.org/data/2.5/weather?lat=44&lon=-112&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42", // Rexburg
+            "https://api.openweathermap.org/data/2.5/weather?lat=43&lon=-114&units=imperial&APPID=ec66dedc10881ec7bf3add572b56be42" // Twin Falls
+         ];
+         var highTempIds = [ "BoiseHighTemp", "IdahoFallsHighTemp", "MeridianHighTemp", "RexburgHighTemp", "TwinFallsHighTemp" ];
+         var currentWeatherIds = [ "BoiseCurrent", "IdahoFallsCurrent", "MeridianCurrent", "RexburgCurrent", "TwinFallsCurrent" ];
+         var infoIds = [ "boiseTempleInfo", "idahoFallsTempleInfo", "meridianTempleInfo", "rexburgTempleInfo", "twinFallsTempleInfo" ];
+
+         for (var index = 0; index < templeUrls.length; index++) {
+            LoadWeatherData(templeUrls[index], highTempIds[index], currentWeatherIds[index]);
+         }
+         LoadTempleData(templeInfoUrl, infoIds);
+   </script>
+   <script src="scripts/hamburger.js"></script>
+</body>
+</html>

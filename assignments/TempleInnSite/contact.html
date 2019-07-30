@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Temple Inn & Suites </title>
+   <meta name="description" content="Temple Inn & Suites">
+   <link rel="stylesheet"  href="css/normalize.css">
+   <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+   <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+   <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+      <div id="pageTop">
+         <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+         <nav class="topnav">
+            <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+               <button>&#9776;</button>
+            </div>
+            <ul class="hide" id="primaryNav">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="temples.html">Temples</a></li>
+               <div class="dropdown">
+                  <li><a href="services.html">Services</a></li>
+                  <div class="dropdown-content">
+                     <li><a href="receptions.html">Receptions</a></li>
+                     <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                  </div>
+               </div>
+               <li><a href="reservations.html">Reservations</a></li>
+               <li class="currentPage" id="lastNavItem"><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main class="centerPage">
+      <h2>Contact Information</h2> 
+      <h2 class="greatVibes">Temple Inn & Suites</h2>
+      <p> 410 W 3rd St, Faith,SD 57626</p>
+      <p>Faith South Dakota 20814 USA</p>
+      <p>(000) 123-4567</p>
+      <button class="button"><a href="reservations.html">Reserve Now</a></button>
+      <form id="contactForm">
+         <fieldset>
+            <legend>Contact Us</legend><br>
+            <div id="formContent">
+               Name: <br>
+               <input type="text" name="name" placeholder="Your name..." pattern="[A-Za-z].{5,}" required><br><br>
+               Email: <br>
+               <input type="email" name="email" placeholder="johnsmith@abc.com" required><br><br>
+               Subject: <br>
+               <input type="text" name="subject"><br><br>
+               Message: <br>
+               <textarea id="textBox" name="leaveComments"></textarea><br><br>
+               <button type="submit" form="contactForm" value="Send Message" id="contactSubmit">Submit</button><br><br>
+            </div>
+         </fieldset><br><br>
+      </form>
+      <div id="googleMap">
+         <iframe src="https://www.google.com/maps/place/410-400+W+3rd+St,+Faith,+SD+57626/@45.02133,-102.043627,16.45z/data=!4m13!1m7!3m6!1s0xb09dff882a7809e1:0xb08d0a385dc8c7c7!2sAntarctica!3b1!8m2!3d-82.862752!4d135!3m4!1s0x532b9ebfb7bf3221:0xac1e24bdb22a3ac!8m2!3d45.0211515!4d-102.0434596" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+   </main>
+
+   <footer>
+      <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+   </footer>
+   <script src="scripts/hamburger.js"></script>
+</body>
+</html>

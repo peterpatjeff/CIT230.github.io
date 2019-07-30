@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Temple Inn & Suites </title>
+      <meta name="description" content="Temple Inn & Suites ">
+      <link rel="stylesheet"  href="css/normalize.css">
+      <link rel="stylesheet"  media="(max-width:700px)" href="css/small.css">
+      <link rel="stylesheet"  media="(min-width: 701px) and (max-width: 1274px)" href="css/medium.css">
+      <link rel="stylesheet" media="(min-width:1275px)" href="css/large.css">
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div id="pageTop">
+            <a href="index.html"><p id="logo">Temple Inn & Suites</p></a>
+            <nav class="topnav">
+               <div class = "wholeHamburger" id="hiddenMenu" onclick="toggleMenu()">
+                  <button>&#9776;</button>
+               </div>
+                  <ul class="hide" id="primaryNav">
+                        <li class="currentPage"><a href="index.html">Home</a></li>
+                        <li><a href="temples.html">Temples</a></li>
+
+                        <div class="dropdown">
+                           <li><a href="services.html">Services</a></li>
+                           <div class="dropdown-content">
+                              <li><a href="receptions.html">Receptions</a></li>
+                              <li><a href="templeMissionaries.html">Temple Missionaries</a></li>
+                           </div>
+                        </div>
+
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li id="lastNavItem"><a href="contact.html">Contact</a></li>
+                  </ul>
+            </nav>
+      </div>
+   </header>
+
+   <main class="homePage">
+      <picture>
+            <source srcset="images/MainLarge.jpg" media="(min-width: 999px)">
+            <img id="mainHotelRoom" src="images/MainMedium.jpg" alt="looking out window "/>
+      </picture> 
+      <h1 id="tagLine">Quality Accomodations</h1>
+      <section class="columns">
+         <figure>
+            <picture>
+               <source srcset="images/specialeventslarge.jpg" media="(min-width: 999px)">
+               <img src="images/specialeventssmall.jpg" alt="Beautiful "/>
+            </picture>
+            <p class="picCaption">We are here for your special events</p>
+         </figure>
+         <figure>
+            <picture>
+                  <source srcset="images/Meridianlarge.jpg" media="(min-width: 999px)">
+                  <img src="images/Meridiansmall.jpg" alt=" Meridian, Idaho"/>
+            </picture>
+            <p class="picCaption">Offering a Piece of Heaven</p>
+         </figure>
+      </section>
+      <button class="button"><a href="reservations.html">Reserve  Now</a></button> 
+
+      <section id="featuredTemple">
+         <div id="featuredColumn1">
+            <picture>
+               <source srcset="images/twin-fallslarge.jpg" media="(min-width: 999px)">
+               <img src="images/twin-fallssmall.jpg" alt="Twin Falls "/>
+            </picture>
+         </div>
+         <div id="featuredColumn2"> 
+            <h2>Featured Temple</h2>
+            <h3>Twin Falls Idaho Temple</h3>
+            <p><b>Dedication:</b> Aug 2008 by Thomas Monson</p>
+            <p><b>Temple facts:</b></p>
+            <p>4th temple built in Idaho</p>
+            <p>Site chosen by Gordon B. Hinckley</p>
+            
+         </div>
+      </section>
+      <div id="call">
+         <h2>Call today!</h2>
+         <h2>(000)123-4567</h2>
+      </div>
+   </main>
+
+   <footer>
+
+      <p id="copyright">&copy; 2019 Temple Inn & Suites</p>
+   </footer>
+   <script src="scripts/hamburger.js"></script>
+   </body>
+</html>
